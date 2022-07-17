@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="shopit.css"/>
+    <style>
+        .form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    display: inline-block;
+    cursor: pointer;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+
+}
+form .btn{
+    width: 100%;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0px;
+}
+#indicator{
+    height: 3px;
+    border: none;
+    width: 100px;
+    margin-top: 8px;
+    transform: translateX(70px);
+    background: blue;
+}
+
+    </style>
+</head>
+<body class="body">
+    <div class="navbar">
+        <div class="logo"><h1>SHOPIT</h1>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#"  class="active">LOGIN</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <i class="fa-solid fa-basket-shopping-simple"></i>
+            </ul>
+        </nav>   
+         
+        <div class="desk">
+            <ul >
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="#" class="active">LOGIN</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <i class="fa-solid fa-basket-shopping-simple"></i>
+            </ul>
+        </div>
+        <img src="images/menu-bar.png" class="menu-icon" onclick="menutoggle()">      
+    </div>
+
+   <div class="col-2">
+       <div class="form-container">
+           <div class="form-btn">
+               <span id="login" onclick="login()">login</span>
+               <span id="register" onclick="register()">Register</span>
+               <hr id="indicator"> 
+           </div>
+           <form id="LoginForm">
+               <input type="text" placeholder="username">
+               <input type="password" placeholder="password">
+               <button type="submit" class="btn">LOGIN</button>
+               <a href="#">forget password</a>
+           </form>
+
+           <form id="RegForm">
+            <input type="text" placeholder="username">
+            <input type="email" placeholder="email">
+            <input type="password" placeholder="password">
+            <button type="submit" class="btn">Register</button>
+        </form>
+       </div>
+   </div>
+
+
+    <div class="container">
+        <div class="foot">
+            <div class="footer-col">
+                <h3>Downlooad our app</h3>
+                <p>Download app for android and ios devices</p>
+                <div class="app-logo">
+                    <img src="images/appstore.png">
+                    <img src="images/googleplay.png">
+                </div>
+            </div>
+            <div class="footer-col">
+                <img>
+                <img src="images/logo.jpg">
+                <p>Our purpose is to bring your househild needs to your doorstep; quick and reliable</p>
+            </div>
+            <div class="footer-col">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Latest products</li>
+                    <li>Return Policy</li>
+                    <li>hhhdhdhhdh</li>
+                    <li>Join affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Snapchat</li>
+                </ul>
+            </div>
+        </div>
+               
+        </div>
+
+        </div>
+       
+    <hr/>
+    <div class="copyright ">Desighned by WINN_MEDIA. copyright @2022
+         <br/><br/>
+        <p>Materials with the <B>S</B> logo are brand products courtesy: SOLARPRENEUR</p>
+    </div>
+
+
+
+ <!-- <script>
+      document.querySelector("nav ul").style.transform="translate(100%)"
+
+document.querySelector(".menu-icon").onclick=function(){
+   
+if(document.querySelector("nav ul").style.transform==="translate(100%)"){
+    document.querySelector("nav ul").style.transform="translate(0%)"
+}
+else {document.querySelector("nav ul").style.transform="translate(100%)"}
+}
+</script> 
+
+<!-- JJIIHIHIHIHIHII
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegisForm");
+    var indicator = document.getElementById("indicator");
+
+    function register(){
+
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translate(0px)";
+    }
+
+    function login(){
+
+        RegForm.style.transform = "translate(300px)";
+        LoginForm.style.transform = "translate(300px)";
+    }
+    
+     -->
+    
+</script>
+</body>
+</html>

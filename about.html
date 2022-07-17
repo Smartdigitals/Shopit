@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="shopit.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><h1>SHOPIT</h1>
+        </div>
+        <nav>
+            <ul id="menu">
+                <center>
+                    <li><a href="index.html">HOME</a></li>
+                <li><a href="singup.html">LOGIN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#foot">CONTACT</a></li>
+                </center>
+            </ul>
+        </nav>   
+         
+        <div class="desk">
+            <ul >
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="singup.html">LOGIN</a></li>
+                <li><a href="about.html"  class="active">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <i class="fa-solid fa-basket-shopping-simple"></i>
+            </ul>
+        </div>    
+
+        
+        <img src="images/menu-bar.png" class="menu-icon" onclick="menutoggle()">    
+    </div>
+    
+   
+        
+       
+        <div class="abt">
+            <div class="titles"><h2> ABOUT US</h2></div>
+            <p>
+                <span>SHOPIT</span> is an online shop built for the sole purpose of bringing consumers closer to the market.
+                We are your ONE STOP shop, you can get all your house hold needs eith the click of a button. <br/>
+                Explicabo eaque voluptates laborum, quaerat ipsa id dolor rerum provident veniam 
+                sint animi expedita dolorum dolorem cum. Porro veritatis nostrum perferendis doloribus
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste molestiae dolore, accusan
+                tium consequatur, natus tenetur alias labore, cupiditate eius dignissimos perspiciatis nemo
+                 deleniti vel dolorum sunt repellendus asperiores earum necessitatibus?
+                 <br>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In, eveniet. Architecto, distinctio? 
+                 Doloremque, ea earum rem accusamus, repellendus dignissimos laborum expedita error id ducimus distinctio illo.
+                  Sed ullam assumenda dolores!
+
+            </p>
+
+        </div>
+       
+        <script>
+            document.querySelector("nav ul").style.transform="translate(100%)";
+            document.querySelector("nav ul").style.display="none"
+    
+    document.querySelector(".menu-icon").onclick=function(){
+       
+    if(document.querySelector("nav ul").style.transform==="translate(100%)"){
+        document.querySelector("nav ul").style.transform="translate(0%)";
+        document.querySelector("nav ul").style.display="block"
+
+    }
+    else {document.querySelector("nav ul").style.transform="translate(100%)"
+    document.querySelector("nav ul").style.display="none"
+}
+    }
+       </script>
+    
+</body>
+</html>

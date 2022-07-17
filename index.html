@@ -1,1 +1,487 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SHOPIT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="shopit.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" >
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,500;1,600&displa
+        y=swap" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
+        <!--FONT AWESOME 4 CDN for star rating-->
+
+         <script src="https://kit.fontawesome.com/434616d8e1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+            <div class="navbar">
+                <div class="logo"><h1>SHOPIT</h1>
+                </div>
+                <nav>
+                    <ul id="menu">
+                        <center>
+                            <li><a href="index.html">HOME</a></li>
+                        <li><a href="singup.html">LOGIN</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="#foot">CONTACT</a></li>
+                        </center>
+                        
+                        <i class="fa-solid fa-basket-shopping-simple"></i>
+                    </ul>
+                </nav>   
+                 
+                <div class="desk">
+                    <ul >
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="singup.html">LOGIN</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="#foot">CONTACT</a></li>
+                       
+                        <i class="fa-solid fa-basket-shopping-simple"></i>
+                    </ul>
+                </div>    
+
+                
+                <img src="images/menu-bar.png" class="menu-icon" onclick="menutoggle()">    
+            </div>
+            
+            <div class="first">
+               <img src="images/shopping-venture.jpg">
+               <div class="text">
+                <h1>WELCOME TO SHOPIT!!!!</h1>
+                <br/>
+                <!-- <p>
+                    SHOPIT is an online one stop shop for all your everyday needs.<br/>
+                    commited to making life easier for its customers
+                </p> -->
+                <br/>
+                <div class="btn">
+                    <a href="#featured">SHOP NOW &#8594;</a>
+                </div>
+            </div>
+            </div>
+
+        
+        <!--FEATURES SECTION-->
+        <div class="section-2">
+            <ul>
+                <li><i class="fa fa-bolt" ></i>
+                    <h3>Fast Delivery</h3>
+                    <p>free shopping on all orders.</p>
+                </li>
+                <li>
+                     <i class="fa fa-exchange" ></i>
+                    <h3>Return Policy</h3>
+                    <p>free shopping on all orders.</p>
+                </li>
+                <li>
+                    <i class="fa fa-phone" ></i>
+                    <h3>24/7 Support</h3>
+                    <p>free shopping on all orders.</p>
+                </li>
+                <li><i class="fa fa-credit-card" ></i>
+                    <h3>Secure Payment</h3>
+                    <p>free shopping on all orders.</p>
+                </li>
+
+                
+            </ul>
+        </div>
+
+        <!---featured category--->
+        <div class="cat  small-container">
+            <div class="col-3">
+                <img src="images/shoes (2).jpg" width="100%">
+            </div>
+            <div class="col-3">
+                <img src="images/kitchen-gfb1eeaf9b_640.jpg" width="100%">
+            </div>
+            <div class="col-3">
+                <img src="images/shelf-gbedfe3394_640.jpg" width="100%">
+            </div>
+            <div class="col-3">
+                <img src="images/dresses-gf0ac5ceae_1920.jpg" width="100%">
+            </div>
+
+        </div>
+       
+        <!--Featued product-->
+        <div class="small-container" id="featured">
+            <h2 class="titles">FEATURED PRODUCT</h2>
+            <div class="raw">
+                <div class="col-4">
+                    <img src="images/copy-1.jpg" width="100%">
+                    <h4>Native</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+            
+                <div class="col-4">
+                    <img src="images/copy-2.jpg" width="100%">
+                    <h4>Face cap</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/copy-3.jpg" width="100%">
+                    <h4>Solar shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+
+
+                <div class="col-4">
+                    <img src="images/copy-4.jpg" width="100%">
+                    <h4>Solar shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div
+
+            
+            </div>
+           
+        </div>
+
+        <div class="small-container">
+            <h2 class="titles">LATEST PRODUCT</h2>
+            <div class="raw">
+                <div class="col-4">
+                    <img src="images/leather-shoes.jpg" width="100%">
+                    <h4>Leather shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                <div class="col-4">
+                    <img src="images/pen.png" width="100%">
+                    <h4>Pen</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/fan.jpg" width="100%">
+                    <h4>Winn fan</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+
+                <div class="col-4">
+                    <img src="images/shoes.jpg" width="100%">
+                    <h4>shoes</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                
+            </div>
+            <div class="raw">
+                <div class="col-4">
+                    <img src="images/design.png" width="100%">
+                    <h4>Manual Mixer</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                <div class="col-4">
+                    <img src="images/nike-shoe.jpg" width="100%">
+                    <h4>Olurex shoe(49)</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                <div class="col-4">
+                    <img src="images/design.png" width="100%">
+                    <h4>Manual Mixer</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                <div class="col-4">
+                    <img src="images/cuttlery.jpg" width="100%">
+                    <h4>cuttlery</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                
+            </div>
+            <div class="raw">
+                <div class="col-4">
+                    <img src="images/book.jpg" width="100%">
+                    <h4>Fancy note</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                <div class="col-4">
+                    <img src="images/copy-4.jpg" width="100%">
+                    <h4>Solar shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                <div class="col-4">
+                    <img src="images/shirt.jpg" width="100%">
+                    <h4>Solar shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                <div class="col-4">
+                    <img src="images/cutlery-g8ddc9d70d_640.jpg" width="100%">
+                    <h4>cutlery set</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$10.00</p>
+                    <a href="index.html" class="ADC">ADD TO CART</a>
+                </div>
+                
+            </div>
+        </div>
+        <!---offer section-->
+        <div class="offer">
+            <div class="small-container">
+                <div class="roww">
+
+
+                        <div class="col-2">
+                            <span class="offer-text">
+                                <p>Exclusively available on SHOPIT</p>
+                            <h1>WINN SHOES</h1>
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illo? Dol
+                                orem cupiditate hic, earum explicabo
+                                 cum eaque quis nihil iure. Facere sed eius doloribus aliquam repudiandae
+                                  nisi ex quisquam aliquid!</small>
+                                
+                            </span>
+                            
+                        </div>
+                        <div class="col-2 offer-img" >
+                            <img src="images/shoes.jpg " width="100%" >
+                        </div>
+
+                    
+                    
+                </div>
+            </div>
+
+        </div>
+        <!---testimony-->
+            <div class="testimonial small-container">
+                <div class="coll">
+                    <i class="fa fa-quote-left"></i>
+                                <p>Hey everyone! <br/> Just shopped from SHOPIT, the site is user friendly and 
+                                   their delivery is swift and efficient.</p>
+                                   <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i> 
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <img src="images/users.jpg" class="testimony">  
+                                <h3>N. O. Godwin</h3>
+                </div>
+                <div class="coll">
+                    <i class="fa fa-quote-left"></i>
+                                <p>Hey everyone! <br/> Just shopped from SHOPIT, the site is user friendly and 
+                                   their delivery is swift and efficient.</p>
+                                   <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i> 
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <img src="images/godwin.jpeg" class="testimony">  
+                                <h3>N. O. Godwin</h3>
+                </div>
+                <div class="coll">
+                    <i class="fa fa-quote-left"></i>
+                                <p>Hey everyone! <br/> Just shopped from SHOPIT, the site is user friendly and 
+                                   their delivery is swift and efficient.</p>
+                                   <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i> 
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <img src="images/users.jpg" class="testimony">  
+                                <h3>John Black</h3>
+                </div>
+
+            </div>
+        <!---footer-->
+            <div class="container">
+                <div class="foot" id="foot">
+                    <div class="footer-col">
+                        <h3>Downlooad our app</h3>
+                        <p>Download app for android and ios devices</p>
+                        <div class="app-logo">
+                            <img src="images/appstore.png">
+                            <img src="images/googleplay.png">
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <img>
+                        <img src="images/logo.jpg">
+                        <p>Our purpose is to bring your househild needs to your doorstep; quick and reliable</p>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>Latest products</li>
+                            <li>Return Policy</li>
+                            <li>hhhdhdhhdh</li>
+                            <li>Join affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Snapchat</li>
+                        </ul>
+                    </div>
+                </div>
+                       
+                </div>
+
+                </div>
+               
+            <hr/>
+            <div class="copyright ">Desighned by WINN_MEDIA. copyright @2022
+                 <br/><br/>
+                <p>Materials with the <B>S</B> logo are brand products courtesy: SOLARPRENEUR</p>
+            </div>
+            <script>
+                document.querySelector("nav ul").style.transform="translate(100%)";
+                document.querySelector("nav ul").style.display="none"
+        
+        document.querySelector(".menu-icon").onclick=function(){
+           
+        if(document.querySelector("nav ul").style.transform==="translate(100%)"){
+            document.querySelector("nav ul").style.transform="translate(0%)";
+            document.querySelector("nav ul").style.display="block"
+
+        }
+        else {document.querySelector("nav ul").style.transform="translate(100%)";
+        document.querySelector("nav ul").style.display="none"
+    }
+        }
+           </script>
+    
+   
+
+    </body>
+    
+</html>
+    

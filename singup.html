@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" >
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,500;1,600&displa
+        y=swap" rel="stylesheet">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="shopit.css"/>
+    <style>
+       *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        html, body{
+            display: grid;
+            height: 100%;
+            place-items: center;
+            background: #f2f2f2;
+            width: 100%;
+        }
+        html, body{
+    display: grid;
+    height: 120%;
+    place-items: center;
+    background: #f2f2f2;
+    width: 100%;
+    /* background-color: rgb(145, 78, 78); */
+}
+.wrapper{
+    max-width: 390px;
+    background: #fff;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 1);
+    padding: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 70px;
+   
+}
+.wrapper .title-text {
+    display: flex;
+    width: 200%;
+}
+.wrapper .title-text .title{
+    width: 50%;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+ .wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+    
+}
+ .form-container .form-inner{
+    display: flex;
+    width: 200%;
+   
+}
+.form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265,1.55);
+    /* overflow: hidden; */
+} 
+.form-container .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+.form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    transition: all 0.4s ease;
+}
+ .form-inner form .field input:focus{
+    border-color: #fc83bb;
+}
+.form-container .slide-controls{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin: 30px 0 10px ;
+    /* background: blue; */
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    overflow: hidden;
+    position: relative;
+}
+.slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 48px;
+    z-index: 1;
+    color: #fff;
+    transition: all 0.6s ease;
+
+}
+.slide-controls .signup{
+    color: #000;
+}
+
+
+
+.form-inner form .passlink a,
+.form-inner form .signup-link a{
+    color: red;
+    text-decoration: none;
+}
+.form-inner form .passlink a:hover,
+.form-inner form .signup-link a:hover{
+     
+    text-decoration: underline;
+}
+.form-inner form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+}
+form .field input[type="submit"]{
+    color: fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0%;
+    background: rgb(12, 12, 50);
+    border-radius: 2px;
+    cursor: pointer;
+
+} 
+.slide-controls .slide-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0%;
+    z-index: 0;
+    background: rgb(12, 12, 68);
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265,1.55);
+}
+#signup:checked ~ .slide-tab{
+    left: 50%;
+}
+#signup:checked ~ .signup{
+    color: #fff;
+}
+#signup:checked ~ .login{
+    color: #000;
+}
+input[type="radio"]{
+    display: none;
+}
+.logsn{
+    color: white;
+}
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><h1>SHOPIT</h1>
+        </div>
+        <nav>
+            <ul id="menu">
+                <center>
+                    <li><a href="index.html">HOME</a></li>
+                <li><a href="singup.html">LOGIN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#foot">CONTACT</a></li>
+                </center>
+            </ul>
+        </nav>   
+         
+        <div class="desk">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="singup.html"  class="active">LOGIN</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>    
+        <img src="images/menu-bar.png" class="menu-icon" onclick="menutoggle()">    
+        </div>
+
+   <div class="wrapper">
+       <div class="title-text">
+           <div class="title login">Login Form</div>
+           <div class="title signup">Signup Form</div>
+       </div>
+       <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slider" id="login" checked>
+            <input type="radio" name="slider" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slide-tab"></div>
+        </div>
+           <div class="form-inner">
+               <form action="#" class="login">
+                   <div class="field">
+                       <input type="text" placeholder="email address" required>
+                   </div>
+                   <div class="field">
+                       <input type="password" placeholder="password" required>
+                   </div>
+                <div class="passlink"><a href="#">forgot password?</a></div>
+                <div class="field">
+                    <input type="submit" value="login" class="logsn" >
+                </div>
+                <div class="signup-link">Not a member? <a href="#">click here</a></div>
+               </form>
+
+               <form action="#" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="email address" required >
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="password" required >
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="confirm password" required >
+                </div>
+            
+             <div class="field">
+                 <input type="submit" value="signup" class="logsn">
+             </div>
+            
+            </form>
+           </div>
+       </div>
+   </div>
+   <script>
+       const loginForm = document.querySelector("form.login");
+       const signupForm = document.querySelector("form.signup");
+       const loginBtn = document.querySelector("label.login");
+       const signupBtn = document.querySelector("label.signup");
+       const signupLink = document.querySelector(".signup-link a");
+       const loginText = document.querySelector(".title-text .login");
+       const signupText = document.querySelector(".title-text .signup");
+       signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+       })
+       loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%"
+           loginText.style.marginLeft = "0%"
+       })
+       signupLink.onclick =(()=>{
+           signupBtn.click();
+           return false;
+       });
+
+   </script>
+
+<script>
+    document.querySelector("nav ul").style.transform="translate(100%)";
+    document.querySelector("nav ul").style.display="none"
+
+document.querySelector(".menu-icon").onclick=function(){
+
+if(document.querySelector("nav ul").style.transform==="translate(100%)"){
+document.querySelector("nav ul").style.transform="translate(0%)";
+document.querySelector("nav ul").style.display="block"
+
+}
+else {document.querySelector("nav ul").style.transform="translate(100%)";
+document.querySelector("nav ul").style.display="none"
+}
+}
+</script>
+</body>
+</html>
